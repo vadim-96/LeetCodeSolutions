@@ -24,6 +24,8 @@ internal static class PlusOneSolution
         {
             Console.Write(item1);
         }
+
+        Console.WriteLine();
     }
 
     private static int[] ConvertPlusOne(int[] digits)

@@ -8,5 +8,6 @@ public static class Program
     {
         ValidParenthesesSolution.TestParentheses();
         PlusOneSolution.TestPlusOne();
+        SingleNumberSolution.TestSingleNumber();
     }
 }
