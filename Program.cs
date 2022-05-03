@@ -6,8 +6,6 @@ public static class Program
 {
     public static void Main()
     {
-        ValidParenthesesSolution.TestParentheses();
-        PlusOneSolution.TestPlusOne();
-        SingleNumberSolution.TestSingleNumber();
+
     }
 }

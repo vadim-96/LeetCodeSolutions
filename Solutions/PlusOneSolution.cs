@@ -10,7 +10,7 @@ internal static class PlusOneSolution
 {
     public static void TestPlusOne()
     {
-        var example1 = new[] { 9, 8, 9, };
+        var example1 = new[] { 9, 8, 9 };
 
         Console.Write("INPUT: ");
         foreach (var item1 in example1)

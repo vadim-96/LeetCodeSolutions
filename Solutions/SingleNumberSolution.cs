@@ -10,10 +10,10 @@ internal static class SingleNumberSolution
     {
         var example = new[] { -336, 513, -560, -481, -174, 101, -997, 40, -527, -784, -283, -336, 513, -560, -481, -174, 101, -997, 40, -527, -784, -283, 354 };
 
-        Console.WriteLine($"SingeNumber: {SingleNumber(example)}");
+        Console.WriteLine($"SingeNumber: {FindSingleNumber(example)}");
     }
 
-    private static int SingleNumber(int[] nums)
+    private static int FindSingleNumber(int[] nums)
     {
         Array.Sort(nums);
 
