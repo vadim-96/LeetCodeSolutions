@@ -2,33 +2,9 @@
 
 namespace LeetCodeSolutions.Solutions;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-internal static class PlusOneSolution
+public static class PlusOneSolution
 {
-    public static void TestPlusOne()
-    {
-        var example1 = new[] { 9, 8, 9 };
-
-        Console.Write("INPUT: ");
-        foreach (var item1 in example1)
-        {
-            Console.Write(item1);
-        }
-
-        var result1 = ConvertPlusOne(example1);
-        Console.Write("\nOUTPUT: ");
-        foreach (var item1 in result1)
-        {
-            Console.Write(item1);
-        }
-
-        Console.WriteLine();
-    }
-
-    private static int[] ConvertPlusOne(int[] digits)
+    public static int[] AddPlusOne(int[] digits)
     {
         if (digits.Length == 1)
         {

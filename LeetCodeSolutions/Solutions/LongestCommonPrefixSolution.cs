@@ -2,20 +2,11 @@
 
 namespace LeetCodeSolutions.Solutions;
 
-using System.Linq;
 using System.Text;
 
-internal static class LongestCommonPrefixSolution
+public static class LongestCommonPrefixSolution
 {
-    public static void TestLongestCommonPrefix()
-    {
-        var wrongExample = new[] { "flower", "flow", "flight", "average", "car", "yak", "yak1", "llll", "lllll" };
-        var example = new[] { "a", "aba", "acb" };
-
-        Console.WriteLine($"LongestCommonPrefix: {FindLongestCommonPrefix(example)}");
-    }
-
-    private static string FindLongestCommonPrefix(string[] strs)
+    public static string FindLongestCommonPrefix(string[] strs)
     {
         if (strs.Length == 1)
         {

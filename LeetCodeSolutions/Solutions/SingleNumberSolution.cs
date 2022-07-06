@@ -2,18 +2,9 @@
 
 namespace LeetCodeSolutions.Solutions;
 
-using System;
-
-internal static class SingleNumberSolution
+public static class SingleNumberSolution
 {
-    public static void TestSingleNumber()
-    {
-        var example = new[] { -336, 513, -560, -481, -174, 101, -997, 40, -527, -784, -283, -336, 513, -560, -481, -174, 101, -997, 40, -527, -784, -283, 354 };
-
-        Console.WriteLine($"SingeNumber: {FindSingleNumber(example)}");
-    }
-
-    private static int FindSingleNumber(int[] nums)
+    public static int FindSingleNumber(int[] nums)
     {
         Array.Sort(nums);
 

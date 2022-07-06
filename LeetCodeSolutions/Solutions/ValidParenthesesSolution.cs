@@ -1,30 +1,12 @@
-﻿// https://leetcode.com/problems/valid-parentheses/
+// https://leetcode.com/problems/valid-parentheses/
 
 namespace LeetCodeSolutions.Solutions;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-internal static class ValidParenthesesSolution
+public static class ValidParenthesesSolution
 {
-    public static void TestParentheses()
-    {
-        var trueExample = "(([]){})";
-        var trueExample1 = "{[]}";
-        var falseExample = "(){[}]";
-        var falseExample1 = "]";
-        var falseExample2 = "){";
-
-        Console.WriteLine($"TRUE: {AreParenthesesValid(trueExample)}");
-        Console.WriteLine($"TRUE: {AreParenthesesValid(trueExample1)}");
-        Console.WriteLine($"FALSE: {AreParenthesesValid(falseExample)}");
-        Console.WriteLine($"FALSE: {AreParenthesesValid(falseExample1)}");
-        Console.WriteLine($"FALSE: {AreParenthesesValid(falseExample2)}");
-    }
-
-    private static bool AreParenthesesValid(string exampleString)
+    public static bool AreParenthesesValid(string exampleString)
     {
         var exampleStr = new StringBuilder(exampleString);
         int currentLength;
