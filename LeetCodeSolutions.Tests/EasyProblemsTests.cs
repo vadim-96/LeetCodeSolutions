@@ -1,9 +1,8 @@
 namespace LeetCodeSolutions.Tests;
 
-using FluentAssertions;
 using LeetCodeSolutions.Solutions;
 
-public class TestsForProblems
+public class EasyProblemsTests
 {
     [Theory]
     [InlineData(new[] { 124, 2, 7, 11, 15, 100, 24 }, 115, new[] { 4, 5 })]
