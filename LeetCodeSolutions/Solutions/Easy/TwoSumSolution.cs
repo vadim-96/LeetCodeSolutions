@@ -1,7 +1,6 @@
-// https://leetcode.com/problems/two-sum/
+namespace LeetCodeSolutions.Solutions.Easy;
 
-namespace LeetCodeSolutions.Solutions;
-
+[Url("https://leetcode.com/problems/two-sum/")]
 public static class TwoSumSolution
 {
     public static int[] FindIndicesOfTwoSum(int[] nums, int target)

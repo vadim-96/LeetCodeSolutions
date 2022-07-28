@@ -1,9 +1,8 @@
-// https://leetcode.com/problems/valid-parentheses/
-
-namespace LeetCodeSolutions.Solutions;
+namespace LeetCodeSolutions.Solutions.Easy;
 
 using System.Text;
 
+[Url("https://leetcode.com/problems/valid-parentheses/")]
 public static class ValidParenthesesSolution
 {
     public static bool AreParenthesesValid(string exampleString)

@@ -1,7 +1,6 @@
-// https://leetcode.com/problems/plus-one/
+namespace LeetCodeSolutions.Solutions.Easy;
 
-namespace LeetCodeSolutions.Solutions;
-
+[Url("https://leetcode.com/problems/plus-one/")]
 public static class PlusOneSolution
 {
     public static int[] AddPlusOne(int[] digits)

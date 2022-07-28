@@ -1,6 +1,6 @@
 namespace LeetCodeSolutions.Tests;
 
-using LeetCodeSolutions.Solutions;
+using LeetCodeSolutions.Solutions.Easy;
 
 public class EasyProblemsTests
 {

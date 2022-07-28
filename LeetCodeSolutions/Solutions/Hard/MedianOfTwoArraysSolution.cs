@@ -1,7 +1,6 @@
-// https://leetcode.com/problems/median-of-two-sorted-arrays/
+namespace LeetCodeSolutions.Solutions.Hard;
 
-namespace LeetCodeSolutions.Solutions;
-
+[Url("https://leetcode.com/problems/median-of-two-sorted-arrays/")]
 public static class MedianOfTwoArraysSolution
 {
     public static double FindMedianOfTwoSortedArrays(int[] nums1, int[] nums2)

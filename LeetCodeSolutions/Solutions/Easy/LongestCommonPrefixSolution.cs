@@ -1,9 +1,8 @@
-// https://leetcode.com/problems/longest-common-prefix/
-
-namespace LeetCodeSolutions.Solutions;
+namespace LeetCodeSolutions.Solutions.Easy;
 
 using System.Text;
 
+[Url("https://leetcode.com/problems/longest-common-prefix/")]
 public static class LongestCommonPrefixSolution
 {
     public static string FindLongestCommonPrefix(string[] strs)

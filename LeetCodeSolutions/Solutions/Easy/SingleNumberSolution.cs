@@ -1,7 +1,6 @@
-// https://leetcode.com/problems/single-number/
+namespace LeetCodeSolutions.Solutions.Easy;
 
-namespace LeetCodeSolutions.Solutions;
-
+[Url("https://leetcode.com/problems/single-number/")]
 public static class SingleNumberSolution
 {
     public static int FindSingleNumber(int[] nums)

@@ -1,7 +1,6 @@
-// https://leetcode.com/problems/contains-duplicate/
+namespace LeetCodeSolutions.Solutions.Easy;
 
-namespace LeetCodeSolutions.Solutions;
-
+[Url("https://leetcode.com/problems/contains-duplicate/")]
 public static class ContainsDuplicateSolution
 {
     public static bool DoesArrayContainDuplicate(int[] nums)
