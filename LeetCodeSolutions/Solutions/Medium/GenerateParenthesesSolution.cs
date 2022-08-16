@@ -8,35 +8,33 @@ public static class GenerateParenthesesSolution
     public static IList<string> GenerateParentheses(int n)
     {
         var capacityForString = n * 2;
-        var openBracket = '(';
-        var closedBracket = ')';
         var currentPair = new StringBuilder(capacityForString, capacityForString);
         var resultParentheses = new List<string>();
 
-        void AddBracket(int numberOfOpeningBracket, int numberOfClosingBracket)
+        void GenerateBracket(int numberOfOpenBrackets, int numberOfClosedBrackets)
         {
-            if (numberOfOpeningBracket == n && numberOfClosingBracket == n)
+            if (numberOfOpenBrackets == n && numberOfClosedBrackets == n)
             {
                 resultParentheses.Add(currentPair.ToString());
                 return;
             }
 
-            if (numberOfOpeningBracket < n)
+            if (numberOfOpenBrackets < n)
             {
-                currentPair.Append(openBracket);
-                AddBracket(numberOfOpeningBracket + 1, numberOfClosingBracket);
+                currentPair.Append('(');
+                GenerateBracket(numberOfOpenBrackets + 1, numberOfClosedBrackets);
                 currentPair.Remove(currentPair.Length - 1, 1);
             }
 
-            if (numberOfClosingBracket < numberOfOpeningBracket)
+            if (numberOfClosedBrackets < numberOfOpenBrackets)
             {
-                currentPair.Append(closedBracket);
-                AddBracket(numberOfOpeningBracket, numberOfClosingBracket + 1);
+                currentPair.Append(')');
+                GenerateBracket(numberOfOpenBrackets, numberOfClosedBrackets + 1);
                 currentPair.Remove(currentPair.Length - 1, 1);
             }
         }
 
-        AddBracket(0, 0);
+        GenerateBracket(0, 0);
 
         return resultParentheses;
     }
